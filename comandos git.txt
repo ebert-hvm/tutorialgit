@@ -1,0 +1,23 @@
+comandos basicos
+git init - cria repositorio
+git status - mostra o estado do repositorio
+git add <path> - coloca as mudancas em staging pra preparar o commit
+git commit -am "descricao do commit" - faz o commit (checkpoint)
+
+branches
+git branch - mostra a branch atual
+git checkout -b <nome da branch> - cria uma branch
+git checkout <nome da branch> - muda de branch
+git merge <nome da branch> - junta o ultimo commit da branch selecionada com a branch atual
+git log --oneline
+
+github
+git pull - atualiza o repositorio local com as mudancas no github (nuvem)
+git push origin <nome da branch> - atualiza o github com as mudancas do reposiutorio local
+git clone - copia um repositorio do github ja existente
+git remote add origin https://github.com/ebert-hvm/tutorialgit.git
+
+desfazer comandos
+git checkout <path> - apaga todas mudancas fora da area de staging (que nao foi dado add)
+git reset --mixed - tira a mudança do staging
+git reset <hash do commit> - volta a um commit anterior
